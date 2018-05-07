@@ -14,9 +14,12 @@ class account():
         print(str(self.value))
     def withdrawl(self,money):
         self.money = int(input('value'))
+        if self.money> self.value:
+            self.money = 0 
+            print("You can't withdraw more than balance")
     def balance(self):
         self.value = self.value - self.money
-        print(self.value)
+        print("Your current balance is: " + str(self.value))
         # self.value = self.value = money
         # print(str(self.value))        # self.value = self.value = money
         # print(str(self.value))
