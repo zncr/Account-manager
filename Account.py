@@ -7,24 +7,29 @@
 # else:   Balance = Balance - transaction  
 
 # print('Your current balance is: ' + str(Balance))
+bal = []
 class account():
     def __init__(self,v):
         self.value = v
-    def cost(self):
-        print(str(self.value))
     def withdrawl(self,money):
-        self.money = int(input('value'))
+        self.money = int(input('How much would you like to withdraw: '))
         if self.money> self.value:
             self.money = 0 
             print("You can't withdraw more than balance")
-    def balance(self):
         self.value = self.value - self.money
+        bal.append(self.value)
+    def balance(self):
+        
         print("Your current balance is: " + str(self.value))
         # self.value = self.value = money
         # print(str(self.value))        # self.value = self.value = money
         # print(str(self.value))
 savings  = account(250)
 checking = account(350)
-checking.cost()
+checking.balance()
 checking.withdrawl(150)
 checking.balance()
+checking.withdrawl(50)
+checking.balance()
+for ba in bal:
+    print(ba)
