@@ -19,8 +19,8 @@ class account():
         self.value = self.value - self.money
         bal.append(self.value)
     def balance(self):
-        
         print("Your current balance is: " + str(self.value))
+         
         # self.value = self.value = money
         # print(str(self.value))        # self.value = self.value = money
         # print(str(self.value))
@@ -31,5 +31,8 @@ checking.withdrawl(150)
 checking.balance()
 checking.withdrawl(50)
 checking.balance()
+print(bal)
 for ba in bal:
     print(ba)
+
+print('Your largest withdrawl is: ' + str(max(bal)))
