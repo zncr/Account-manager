@@ -31,6 +31,7 @@ checking.withdrawl(150)
 checking.balance()
 checking.withdrawl(50)
 checking.balance()
+checking.withdrawl(500)
 print(bal)
 for ba in bal:
     print(ba)
@@ -39,5 +40,5 @@ print('Your largest withdrawl is: ' + str(max(bal)))
 lbal = []
 for i in bal:
     if i>150:
-        lbal.append(i)
+        lbal.append(i+2)
 print(lbal)
