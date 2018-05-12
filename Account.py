@@ -32,6 +32,7 @@ checking.balance()
 checking.withdrawl(50)
 checking.balance()
 checking.withdrawl(500)
+checking.balance()  
 print(bal)
 for ba in bal:
     print(ba)
