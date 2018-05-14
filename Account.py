@@ -40,6 +40,6 @@ for ba in bal:
 print('Your largest withdrawl is: ' + str(max(bal)))
 lbal = []
 for i in bal:
-    if i>150:
+    if i>65:
         lbal.append(i+2)
 print(lbal)
